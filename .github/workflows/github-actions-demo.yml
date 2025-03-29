@@ -32,4 +32,4 @@ jobs:
     steps:
       - name: Trigger Netlify Deploy
         run: |
-          curl -X POST https://api.netlify.com/build_hooks/67e737b6c3c77d4ed3023cce
+          curl -X POST ${{ secrets.NETLIFY_BUILD_HOOK_URL }}
